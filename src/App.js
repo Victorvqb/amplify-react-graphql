@@ -7,6 +7,7 @@ import {
   Heading,
   Text,
   TextField,
+  Image,
   View,
   withAuthenticator,
 } from "@aws-amplify/ui-react";
@@ -16,18 +17,7 @@ import {
   deleteNote as deleteNoteMutation,
 } from "./graphql/mutations";
 import { generateClient } from 'aws-amplify/api';
-
 import { uploadData, getUrl, remove } from 'aws-amplify/storage';
-import {
-  Button,
-  Flex,
-  Heading,
-  Image,
-  Text,
-  TextField,
-  View,
-  withAuthenticator,
-} from '@aws-amplify/ui-react';
 
 const client = generateClient();
 
